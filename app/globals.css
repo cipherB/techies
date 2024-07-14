@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  font-family: var(--font-inter);
+} */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  overflow-x: hidden;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-bricolage-grotesque) !important;
+  font-weight: 700;
+}
+
+.bg-gradient-black {
+  background: radial-gradient(129.45% 192.73% at 109.11% 14.67%, #4D4D4D 0%, #1A1A1A 33.43%, #191919 65.69%, #4D4D4D 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.bg-gradient-yellow {
+  background: radial-gradient(120.21% 119.82% at 108.42% -11.55%, #E8EDD1 18.36%, #E0F26D 48.26%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.bg-gradient-blue {
+  background: radial-gradient(120.21% 119.82% at 108.42% -11.55%, #D1E2ED 18.36%, #91CCF2 48.26%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.bg-gradient-grey {
+  background: radial-gradient(106.63% 274.39% at 104.87% 111.56%, #FFFFFF 14.26%, #E3E3E3 66.5%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,linear-gradient(263.8deg, #FFFFFF 17.3%, #E6E6E6 82.59%);
+}
+
+button {
+  overflow: hidden;
+  position: relative;
+}
+
+.elevator-text {
+  position: relative;
+}
+
+button:hover .elevator-text {
+  position: relative;
+  transform: translateY(0);
+  animation: elevator 0.2s linear;
+}
+
+.radial-dark:hover {
+  background: radial-gradient(134.22% 143.09% at 109.16% -9.89%, #4D4D4D 5.94%, #1A1A1A 36.17%, #191919 60.53%, #4D4D4D 89.06%) !important;
+}
+
+.home-bg {
+  background-image: url('../public/homebg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer-list > li > div {
+  max-width: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E0F26D;
+  transition: all 500ms ease-in-out;
+}
+
+.footer-list > li:hover > div {
+  max-width: 500px;
+}
+
+@keyframes elevator {
+  0%   { left:0px; top:0px;}
+  /* 25%  {left:0px; top:-200px;} */
+  25%  {left:0px; top:-80px;visibility: hidden;}
+  50%  {left:200px; top:80px;visibility: hidden;}
+  75%  {left:0px; top:80px;visibility: visible;}
+  100% {left:0px; top:0px;}
+};
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
