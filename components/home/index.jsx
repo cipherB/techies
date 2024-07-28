@@ -42,13 +42,13 @@ const LandingPage = () => {
 
   return (
     <div>
-      {/* {
+      {
         showScreen && (
           <div className='fixed top-0 left-0 z-50 flex items-center justify-center w-screen h-screen bg-palette-primary' >
             <h1 className={`transition-all duration-300 ${message === "Techies" ? "md:text-[64px] text-2xl font-semibold text-sky-500 animate-pulse" : "text-white duration-[4s] animate-pulse font-medium text-sm md:text-3xl"}`} >{message} </h1>
           </div>
         )
-      } */}
+      }
       <Navbar />
       <>
         <SectionOne />
