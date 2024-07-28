@@ -71,22 +71,22 @@ const SectionEight = () => {
       </h2>
       <div className="grid md:grid-cols-6 gap-x-10">
         {/* Column 1 */}
-        <div className="sticky top-0 col-span-2" >
+        <div className="sticky top-0 md:col-span-2" >
           <p className="capitalize text-[22px] md:text-[30px] leading-[67.2px] font-bold mb-2">
             general
           </p>
           <p>Questions about what is possible with us. </p>
         </div>
         {/* Column 2 Row 1 */}
-        <div className="col-span-4 " >
+        <div className="overflow-hidden md:col-span-4" >
           {faqs.slice(0, 4).map((faq) => (
             <div key={faq.id} className={`${faq.id !== 1 && "pt-7"} pb-5 border-b border-[#E6E6E6]`} >
               <div className="flex items-center justify-between cursor-pointer" onClick={()=>handleQuestionSelect(faq.id)}>
                 <p className="font-medium">{faq.question}</p>
                 {selectedQuestion === faq.id ? (
-                  <BsDash className="text-2xl font-semibold" />
+                  <BsDash className="text-2xl font-semibold mobile:min-w-10" />
                 ) : (
-                  <BsPlus className="text-2xl font-semibold" />
+                  <BsPlus className="text-2xl font-semibold mobile:min-w-10" />
                 )}
               </div>
               <div
@@ -103,22 +103,22 @@ const SectionEight = () => {
       </div>
       <div className="grid md:grid-cols-6 gap-x-10">
         {/* Column 1 */}
-        <div className="sticky top-0 col-span-2" >
+        <div className="sticky top-0 md:col-span-2" >
           <p className="capitalize  text-[30px] leading-[67.2px] font-bold mb-2">
             security
           </p>
           <p>Questions on security and data protection. </p>
         </div>
         {/* Column 2 Row 2 */}
-        <div className="col-span-4 " >
+        <div className="overflow-hidden md:col-span-4" >
           {faqs.slice(4, 5).map((faq) => (
             <div key={faq.id} className={`pt-7 pb-5 border-b border-[#E6E6E6]`} >
-              <div className="flex items-center justify-between cursor-pointer" onClick={()=>handleQuestionSelect(faq.id)}>
+              <div className="flex items-center justify-between cursor-pointer mobile:gap-x-5" onClick={()=>handleQuestionSelect(faq.id)}>
                 <p className="font-medium">{faq.question}</p>
                 {selectedQuestion === faq.id ? (
-                  <BsDash className="text-2xl font-semibold" />
+                  <BsDash className="text-2xl font-semibold mobile:min-w-10" />
                 ) : (
-                  <BsPlus className="text-2xl font-semibold" />
+                  <BsPlus className="text-2xl font-semibold mobile:min-w-10" />
                 )}
               </div>
               <div
