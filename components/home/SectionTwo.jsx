@@ -69,7 +69,7 @@ const SectionTwo = () => {
   };
   if(domLoaded) {
     return (
-      <div className='py-5 md:py-[60px] md:block' >
+      <div className='py-5 md:py-[60px] md:block bg-blue-200' >
         <div className='md:mb-10' >
           <Slider {...settingsTR} >
             <div className='px-4' >

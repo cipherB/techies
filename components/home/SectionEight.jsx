@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { BsDash, BsPlus } from "react-icons/bs";
+import { marked } from "marked";
 
 const faqs = [
   {
@@ -34,6 +35,12 @@ const faqs = [
     answer: `<p>We ensure any sensitive information sent to us are stored within a secured deployment platform and not accessible directly in the website by any unwanted party.</p>`,
   },
 ];
+
+const DangerousHTML = ({ text }) => {
+  const htmlContent = marked(text);
+
+  return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+}
 
 const SectionEight = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(null);
@@ -87,7 +94,8 @@ const SectionEight = () => {
                   selectedQuestion === faq.id ? "max-h-[1000px] mt-8" : "max-h-0"
                 }`}
               >
-                <p dangerouslySetInnerHTML={{__html: faq.answer}} />
+                <DangerousHTML text={faq.answer} />
+                {/* <p dangerouslySetInnerHTML={{__html: faq.answer}} /> */}
               </div>
             </div>
           ))}
@@ -118,7 +126,8 @@ const SectionEight = () => {
                   selectedQuestion === faq.id ? "max-h-[1000px] mt-8" : "max-h-0"
                 }`}
               >
-                <p dangerouslySetInnerHTML={{__html: faq.answer}} />
+                <DangerousHTML text={faq.answer} />
+                {/* <p dangerouslySetInnerHTML={{__html: }} /> */}
               </div>
             </div>
           ))}

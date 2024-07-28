@@ -14,11 +14,8 @@ module.exports = {
       },
       colors: {
         'palette': {
-          'primary': "#2ea1e1"
+          'primary': "#00008B"
         }
-      },
-      backgroundImage: {
-        "landing": "url(/landing.png)"
       },
       screens: {
         "mobile": {"max": "600px"}

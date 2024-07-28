@@ -7,21 +7,31 @@ const Footer = () => {
   return (
     <div className="bg-[#1A1A1A] px-4 md:px-[60px] pt-[80px]">
       <div className="py-[31px] flex justify-between flex-col md:flex-row gap-y-3 items-center mb-8">
-        <Image
-          src="/techies-logo.png"
-          alt="logo"
-          onClick={() => scrollToElement("home")}
-          width={209.11}
-          height={45}
-          quality={100}
-        />
+        <Link href={"/"} >
+          <Image
+            src="/techies-logo.png"
+            alt="logo"
+            onClick={() => scrollToElement("home")}
+            width={209.11}
+            height={45}
+            quality={100}
+          />
+        </Link>
         <div>
           <ul className="flex flex-col flex-wrap p-0 pt-6 mb-3 list-none footer-list gap-x-3 md:flex-row gap-y-3 md:pt-0 md:justify-end md:gap-x-6">
+          <li >
+              <Link
+                href={"/about-us"}
+                className="text-[#cccccc] font-medium"
+              >
+                About Us
+              </Link>
+              <div></div>
+            </li>
             <li>
               <Link
-                href={"#"}
+                href={"/services"}
                 className="text-[#cccccc] font-medium"
-                onClick={() => scrollToElement("services")}
               >
                 Our Services
               </Link>
@@ -29,19 +39,9 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/portfolio"}
                 className="text-[#cccccc] font-medium"
-                onClick={() => scrollToElement("work")}
-              >
-                Project Timelines
-              </Link>
-              <div></div>
-            </li>
-            <li>
-              <Link
-                href={"/"}
-                className="text-[#cccccc] font-medium"
-                onClick={() => scrollToElement("projects")}
+                // onClick={() => scrollToElement("projects")}
               >
                 Recent Projects
               </Link>
@@ -57,13 +57,13 @@ const Footer = () => {
               </Link>
               <div></div>
             </li>
-            <li >
+            <li>
               <Link
-                href={"/"}
+                href={"/contact-us"}
                 className="text-[#cccccc] font-medium"
-                onClick={() => scrollToElement("home")}
+                // onClick={() => scrollToElement("work")}
               >
-                Special Offers
+                Contact Us
               </Link>
               <div></div>
             </li>
@@ -71,7 +71,7 @@ const Footer = () => {
           <Image src="/DividerShort.svg" alt="divider" width={717} height={1} />
           <ul className="flex p-0 mt-3 list-none md:justify-end gap-x-6">
             <li>
-              <Link href={"/"} className="text-[#cccccc] font-medium">
+              <div href={"/"} className="text-[#cccccc] font-medium">
                 Get In Touch:{" "}
                 <a
                   className="font-bold no-underline"
@@ -79,7 +79,7 @@ const Footer = () => {
                 >
                   official.techies@gmail.com
                 </a>
-              </Link>
+              </div>
             </li>
           </ul>
         </div>
