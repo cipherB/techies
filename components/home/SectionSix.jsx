@@ -9,7 +9,7 @@ const SectionSix = () => {
         <div className="flex items-center flex-col md:flex-row gap-y-4 justify-between mb-[60px]">
           <div>
             <h2 className="capitalize text-3xl md:text-5xl md:leading-[67.2px] font-bold ">
-              all it takes is one week
+              We stick to a timeline
               <br /> from start to finish
             </h2>
             <p>Here&apos;s exactly how we do it</p>
@@ -24,7 +24,7 @@ const SectionSix = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-x-6 gap-y-8" >
           {/* Column 1 */}
           <div className="relative" >
-            <p className="font-bold" >Day 1</p>
+            <p className="font-bold" >Stage 1</p>
             <p className="text-2xl font-bold" >The Discovery</p>
             <Image 
               src="/Polygon.svg"
@@ -45,7 +45,7 @@ const SectionSix = () => {
           </div>
           {/* Column 2 */}
           <div className="relative" >
-            <p className="font-bold" >Day 2</p>
+            <p className="font-bold" >Stage 2</p>
             <p className="text-2xl font-bold" >The Kickoff</p>
             <Image 
               src="/Polygon.svg"
@@ -65,7 +65,7 @@ const SectionSix = () => {
           </div>
           {/* Column 3 */}
           <div className="relative md:col-span-2" >
-            <p className="font-bold" >Day 3</p>
+            <p className="font-bold" >Stage 3</p>
             <p className="text-2xl font-bold" >The Design</p>
             <Image 
               src="/Polygon.svg"
@@ -85,7 +85,7 @@ const SectionSix = () => {
           </div>
           {/* Column 4 */}
           <div className="relative" >
-            <p className="font-bold" >Day 4</p>
+            <p className="font-bold" >Stage 4</p>
             <p className="text-2xl font-bold" >The Delivery</p>
             <div className="flex justify-between">
               <Image 

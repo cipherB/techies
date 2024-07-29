@@ -46,7 +46,7 @@ const SectionSeven = () => {
             What makes us special?
           </h2>
           <button onClick={()=>scrollToElement("contact")} className="bg-[#1A1A1A] border-none rounded-[100px] w-full text-sm md:text-xl font-semibold capitalize text-white py-4 flex justify-center items-center gap-x-3">
-            <span className='elevator-text' >place an order</span> <FaLongArrowAltRight />
+            <span className='elevator-text' >Get Quote</span> <FaLongArrowAltRight />
           </button>
         </div>
         {/* Column 2 */}

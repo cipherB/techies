@@ -15,7 +15,7 @@ const SectionTwo = () => {
             // onClick={() => scrollToElement("contact")}
             className="bg-palette-primary border-none rounded-[100px] w-full text-sm md:text-xl font-semibold capitalize text-white py-4 flex justify-center items-center gap-x-3"
           >
-            <span className="elevator-text">place an order</span>{" "}
+            <span className="elevator-text">Get Quote</span>{" "}
             <FaLongArrowAltRight />
           </button>
         </div>

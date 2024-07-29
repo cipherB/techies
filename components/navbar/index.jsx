@@ -77,15 +77,21 @@ const Navbar = () => {
               </Link>
               <div></div>
             </li>
+            <li>
+              <Link 
+                href={"/contact-us"}
+                className='font-semibold text-white capitalize'
+              >
+                Contact
+              </Link>
+              <div></div>
+            </li>
           </ul>
           {/* Column 3 */}
           <ul className='flex items-center list-none gap-x-6' >
-            <button onClick={() => router.push("/contact-us")} className=' border border-white bg-transparent rounded-[100px] px-4 py-3 text-white capitalize font-semibold' >
-              contact us
-            </button>
             <button onClick={() => router.push("/contact-us")} className=' border-none bg-palette-primary rounded-[100px] px-4 py-3 gap-x-1 text-white flex justify-center items-center capitalize font-semibold' >
               <BsLightningChargeFill />
-              place an order
+              Get Free Quote
             </button>
           </ul>
         </div>

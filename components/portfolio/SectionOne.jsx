@@ -5,7 +5,7 @@ const SectionOne = () => {
   return (
     <div
       id="home"
-      className="max-w-[1300px] mobile:px-4 mx-auto pt-[208px] md:pt-[108px] pb-[60px] relative"
+      className="max-w-[1300px] mobile:px-4 mx-auto pt-[108px] md:pt-[208px] pb-[60px] relative"
     >
       <div className="grid items-center md:grid-cols-2 gap-x-10 gap-y-5">
         <div className="w-full">

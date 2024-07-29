@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { scrollToElement } from "../utilities";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="bg-[#1A1A1A] px-4 md:px-[60px] pt-[80px]">
       <div className="py-[31px] flex justify-between flex-col md:flex-row gap-y-3 items-center mb-8">
-        <Link href={"/"} >
+        <Link href={"/"}>
           <Image
             src="/techies-logo.png"
             alt="logo"
@@ -19,20 +20,14 @@ const Footer = () => {
         </Link>
         <div>
           <ul className="flex flex-col flex-wrap p-0 pt-6 mb-3 list-none footer-list gap-x-3 md:flex-row gap-y-3 md:pt-0 md:justify-end md:gap-x-6">
-          <li >
-              <Link
-                href={"/about-us"}
-                className="text-[#cccccc] font-medium"
-              >
+            <li>
+              <Link href={"/about-us"} className="text-[#cccccc] font-medium">
                 About Us
               </Link>
               <div></div>
             </li>
             <li>
-              <Link
-                href={"/services"}
-                className="text-[#cccccc] font-medium"
-              >
+              <Link href={"/services"} className="text-[#cccccc] font-medium">
                 Our Services
               </Link>
               <div></div>
@@ -79,6 +74,24 @@ const Footer = () => {
                 >
                   official.techies@gmail.com
                 </a>
+                <div className="flex items-center mt-2 md:justify-end gap-x-2">
+                  <a
+                    className="text-2xl font-bold text-white no-underline"
+                    href="https://google.com/"
+                    target="blank"
+                    rel="noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    className="text-2xl font-bold text-white no-underline"
+                    href="https://google.com/"
+                    target="blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
               </div>
             </li>
           </ul>
