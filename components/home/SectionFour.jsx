@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { scrollToElement } from "../utilities";
+import Link from "next/link";
 
 const SectionFour = () => {
   return (
@@ -12,13 +13,14 @@ const SectionFour = () => {
           <h2 className="capitalize text-white text-3xl md:text-5xl md:leading-[67.2px] font-bold mb-10">
             Services you get as a result
           </h2>
-          <button
-            onClick={() => scrollToElement("contact")}
-            className="bg-palette-primary border-none rounded-[100px] w-full text-sm md:text-xl font-semibold capitalize text-white py-4 flex justify-center items-center gap-x-3"
-          >
-            <span className="elevator-text">Get Quote</span>{" "}
-            <FaLongArrowAltRight />
-          </button>
+          <Link href={"/contact-us"} >
+            <button
+              className="bg-palette-primary border-none rounded-[100px] w-full text-sm md:text-xl font-semibold capitalize text-white py-4 flex justify-center items-center gap-x-3"
+            >
+              <span className="elevator-text">Get Quote</span>{" "}
+              <FaLongArrowAltRight />
+            </button>
+          </Link>
         </div>
         {/* Column 2 */}
         <div className="md:col-span-3">

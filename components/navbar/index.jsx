@@ -89,10 +89,12 @@ const Navbar = () => {
           </ul>
           {/* Column 3 */}
           <ul className='flex items-center list-none gap-x-6' >
-            <button onClick={() => router.push("/contact-us")} className=' border-none bg-palette-primary rounded-[100px] px-4 py-3 gap-x-1 text-white flex justify-center items-center capitalize font-semibold' >
-              <BsLightningChargeFill />
-              Get Free Quote
-            </button>
+            <Link href={"/contact-us"} >
+              <button onClick={() => router.push("/contact-us")} className=' border-none bg-palette-primary rounded-[100px] px-4 py-3 gap-x-1 text-white flex justify-center items-center capitalize font-semibold' >
+                <BsLightningChargeFill />
+                Get Free Quote
+              </button>
+            </Link>
           </ul>
         </div>
       </nav>
