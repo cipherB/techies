@@ -28,7 +28,8 @@ const SectionOne = () => {
               "UX UI Design",
             ]}
             loop
-            typeSpeed={40}
+            typeSpeed={50}
+            backSpeed={50}
           />
         </h1>
         <p className="text-white font-light mobile:text-center md:leading-[40.4px] text-lg md:text-xl mt-3">
