@@ -24,7 +24,6 @@ const SectionOne = () => {
           <ReactTyped
             strings={[
               "MVP Development",
-              "Saas Application Development",
               "Software Development",
               "UX UI Design",
             ]}
